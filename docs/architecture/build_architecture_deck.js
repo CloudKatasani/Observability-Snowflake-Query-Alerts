@@ -15,13 +15,13 @@ const md = require("react-icons/md");
 
 const OUT = path.join(__dirname, "Snowflake_Query_Alerts_Architecture.pptx");
 
-// Capgemini palette
+// Colour palette
 const HEX = {
   navy: "12446E", blue: "0070AD", deep: "003D5A", sky: "12ABDB", skyLight: "A4DBE8",
   skyTint: "E8F4FB", coral: "E94B89", coralBg: "FCE4EE", ink: "1F2A36", grey: "5B6B7B", white: "FFFFFF",
 };
 const THEME = {
-  name: "Capgemini Observability",
+  name: "Platform Observability",
   headFontFace: "Cambria",
   bodyFontFace: "Calibri",
   colors: {
@@ -41,8 +41,8 @@ async function icon(Comp, hex, size = 256) {
   const pres = new pptxgen();
   pres.layout = "LAYOUT_WIDE"; // 13.333 x 7.5
   pres.title = "Snowflake Real-Time Query Alerts - Architecture";
-  pres.author = "Capgemini - Data and AI Architecture";
-  pres.company = "Capgemini";
+  pres.author = "Platform Observability";
+  pres.company = "Platform Observability";
   pres.theme = { headFontFace: THEME.headFontFace, bodyFontFace: THEME.bodyFontFace };
   const C = pres.SchemeColor;
   const S = pres.shapes;
@@ -54,7 +54,7 @@ async function icon(Comp, hex, size = 256) {
     objects: [
       { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.3, w: 11.7, h: 1.4, fontFace: "Cambria", fontSize: 40, bold: true, color: C.background1, valign: "bottom", margin: 0 }, text: "" } },
       { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 3.9, w: 11.7, h: 1.2, fontFace: "Calibri", fontSize: 20, color: C.accent5, valign: "top", margin: 0 }, text: "" } },
-      { text: { text: "Capgemini  |  Platform Observability", options: { x: 0.8, y: 6.7, w: 8, h: 0.35, fontFace: "Calibri", fontSize: 11, color: C.accent5, margin: 0 } } },
+      { text: { text: "Platform Observability", options: { x: 0.8, y: 6.7, w: 8, h: 0.35, fontFace: "Calibri", fontSize: 11, color: C.accent5, margin: 0 } } },
     ],
   });
   pres.defineSlideMaster({

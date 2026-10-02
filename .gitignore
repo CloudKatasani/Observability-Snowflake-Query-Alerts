@@ -1,0 +1,5 @@
+# Local overrides that may contain real secrets / recipients — never commit
+*.local.sql
+secrets/
+.env
+.DS_Store

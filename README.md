@@ -16,6 +16,8 @@ Native Snowflake alerting for **long-running**, **queued** and **lock-blocked** 
 
 See [`docs/DESIGN.md`](docs/DESIGN.md) for the architecture, flow, PagerDuty lifecycle and design decisions.
 
+📊 **Architecture slides:** [`docs/architecture/Snowflake_Query_Alerts_Architecture.pptx`](docs/architecture/Snowflake_Query_Alerts_Architecture.pptx) ([PDF preview](docs/architecture/Snowflake_Query_Alerts_Architecture.pdf)) — 10 slides: alert types, solution architecture, processing flow, channels, PagerDuty lifecycle, code modules, security, design decisions, deploy and operate.
+
 ---
 
 ## Repository layout
@@ -23,7 +25,11 @@ See [`docs/DESIGN.md`](docs/DESIGN.md) for the architecture, flow, PagerDuty lif
 ```
 ├── README.md
 ├── docs/
-│   └── DESIGN.md                      architecture & design decisions
+│   ├── DESIGN.md                      architecture & design decisions
+│   └── architecture/
+│       ├── Snowflake_Query_Alerts_Architecture.pptx   architecture deck (10 slides)
+│       ├── Snowflake_Query_Alerts_Architecture.pdf    PDF preview of the deck
+│       └── build_architecture_deck.js                 pptxgenjs generator (regenerate the deck)
 ├── deploy/
 │   └── deploy_all.sql                 SnowSQL runner (!source, in order)
 └── sql/
